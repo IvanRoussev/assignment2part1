@@ -12,3 +12,10 @@ const contactList = [ 
 		email: "greenlantern@watchtower.com",  
 	}
 ]
+
+
+function cleanUpIndex() {
+	let classmain = document.querySelector('.main')
+	classmain.innerHTML= ''
+}
+
