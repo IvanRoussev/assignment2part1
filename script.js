@@ -14,31 +14,33 @@ const contactList = [ 
 ]
 
 
-
+/* done */
 function cleanUpIndex() {
 	let classmain = document.querySelector('.main')
 	classmain.innerHTML= ''
 }
 
 
-function createSingleIndex(contact) {
-	return `<a href="page3.html"><div class="contact"><p>${contact.name}</p></div></a>`
+/* Done */
+function createSingleIndex(contactList) {
+	return `<a href="page3.html"><div class="contact"><p>${contactList.name}</p></div></a>`
 }
 
-
-
-function renderindex(contactList) {
+/* Done */
+function renderindex(contactLists) {
     let classmain = document.querySelector('.main')
     for (let i = 0; i < contactList.length; i++) {
         classmain.insertAdjacentHTML('beforeend', createSingleIndex(contactList[i]))
     }
 }
 
+/* done */
 function cleanUpView() {
     let viewclass  = document.querySelector('.main')
     viewclass.innerHTML = ''
 }
 
+/* Somewhat Done */
 function renderView(contactList) {
 	let viewclass = document.querySelector('.main')
 	for (let i = 0; i < contactList.length; i++) {
@@ -46,8 +48,17 @@ function renderView(contactList) {
     }
 }
 
+/* Done */
 function cleanUpCreate(){
 	let classmain = document.querySelector('.main')
 	classmain.innerHTML= ''
 }
+
+function renderCreate(contact) {
+	return 
+}
+
+
+
+
 
