@@ -19,3 +19,8 @@ function cleanUpIndex() {
 	classmain.innerHTML= ''
 }
 
+
+function createSingleIndex(contact) {
+	return `<a href="page3.html"><div class="contact"><p>${contact.name}</p></div></a>`
+}
+
