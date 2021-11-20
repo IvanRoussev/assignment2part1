@@ -24,3 +24,16 @@ function createSingleIndex(contact) {
 	return `<a href="page3.html"><div class="contact"><p>${contact.name}</p></div></a>`
 }
 
+
+
+function renderindex(contactList) {
+    let classmain = document.querySelector('.main')
+    for (let i = 0; i < contactList.length; i++) {
+        classmain.insertAdjacentHTML('beforeend', createSingleIndex(contactList[i]))
+    }
+}
+
+function cleanUpView() {
+    let viewclass  = document.querySelector('.main')
+    viewclass.innerHTML = ''
+}
