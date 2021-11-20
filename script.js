@@ -14,6 +14,7 @@ const contactList = [ 
 ]
 
 
+
 function cleanUpIndex() {
 	let classmain = document.querySelector('.main')
 	classmain.innerHTML= ''
@@ -37,3 +38,16 @@ function cleanUpView() {
     let viewclass  = document.querySelector('.main')
     viewclass.innerHTML = ''
 }
+
+function renderView(contactList) {
+	let viewclass = document.querySelector('.main')
+	for (let i = 0; i < contactList.length; i++) {
+        viewclass.insertAdjacentHTML('beforeend', createSingleIndex(contactList[i]))
+    }
+}
+
+function cleanUpCreate(){
+	let classmain = document.querySelector('.main')
+	classmain.innerHTML= ''
+}
+
